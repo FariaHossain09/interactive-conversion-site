@@ -2,11 +2,12 @@
 <html>
 <head>
 <title>page2</title>
+<script type="text/javascript" src="page2.js"></script>
 </head>
 <body>
 
 
-<form action="<?php htmlspecialchars($_SERVER['PHP_SELF'])?>" method="POST">
+<form action="<?php htmlspecialchars($_SERVER['PHP_SELF'])?>" method="POST" onsubmit="return isValid()" name="mForm" id="nForm">
     <fieldset>
     
     <label for="page1">Page 2 [Conversion Rate]</label>
